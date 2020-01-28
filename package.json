@@ -9,7 +9,8 @@
   "scripts": {
     "build": "babel src --out-dir .",
     "start": "babel -w src --out-dir .",
-    "test":  "eslint ./src/**/*.js"
+    "test":  "eslint ./src/**/*.js",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "gatsby",
