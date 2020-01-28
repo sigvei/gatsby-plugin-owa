@@ -3,15 +3,28 @@ import React from 'react'
 function trackingCode (options) {
   const {
     owaUrl,
-    siteId
+    siteId,
+    trackClicks
   } = options
+
+  const cmds = [
+    ['setSiteId', siteId],
+    ['trackPageView']
+  ]
+
+  if (trackClicks === true) {
+    cmds.push(['trackClicks'])
+  }
+
+  const cmdsHtml = cmds.map(cmd => (
+    `owa_cmds.push(${JSON.stringify(cmd)});`
+  )).join(' ')
 
   const html = `
     var owa_baseUrl = '${owaUrl}';
     var owa_cmds = owa_cmds || [];
-    owa_cmds.push(["setSiteId", "${siteId}"]);
-    owa_cmds.push(["trackPageView"]);
-    
+    ${cmdsHtml}
+
     (function() {
       var _owa = document.createElement('script');
       _owa.type = 'text/javascript';

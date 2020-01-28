@@ -24,6 +24,13 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
    ```
 
    The `owaUrl` should be a full url to an owa installation, with an ending slash, like `https://my-owa-server.domain/owa/`.
+   
+## Options
+
+In addition to the required options `siteId` and `owaUrl`, the plugin understands the following options:
+
+`trackClicks` (boolean, default: `false`)
+: Enables OWA's built-in click tracking.
 
 ## License
 
