@@ -16,8 +16,8 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
      {
        resolve: `gatsby-plugin-owa`,
        options: {
-       	  siteId: 'OWA_SITE_ID',
-          owaUrl: 'OWA_URL'
+         siteId: 'OWA_SITE_ID',
+         owaUrl: 'OWA_URL'
        }
      }
    ]
@@ -29,22 +29,21 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
 
 In addition to the required options `siteId` and `owaUrl`, the plugin understands the following options:
 
-`trackClicks` (boolean, default: `false`)
-: Enables OWA's built-in click tracking.
+**`trackClicks` (boolean, default: `false`)**: Enables OWA's built-in click tracking.
 
-`trackDomStream` (boolean, default: `false`)
-: Enables OWA's DOM stream tracking. According to OWA's docs this means:
-  ‘[track the] stream of mouse oriented events (movement, click, focus, etc.)
-  that a user generated while they interact with your web page and send
-  the “dom stream” to the server as a single event. This mode is used by
-  OWA record domstreams that can be played back by OWA's javascrpt
-  domstream player’.
+**`trackDomStream` (boolean, default: `false`)**
+Enables OWA's DOM stream tracking. According to OWA's docs this means:
+‘[track the] stream of mouse oriented events (movement, click, focus, etc.)
+that a user generated while they interact with your web page and send
+the “dom stream” to the server as a single event. This mode is used by
+OWA record domstreams that can be played back by OWA's javascrpt
+domstream player’.
 
 ## License
 
 The MIT License
 
-Copyright (c) 2018 Sigve Indregard
+Copyright (c) 2020 Sigve Indregard
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
