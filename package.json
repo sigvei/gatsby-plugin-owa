@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-owa",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Gatsby plugin to add Open Web Analytics (OWA) javascript tracker",
   "main": "index.js",
   "repository": "https://github.com/github:sigvei/gatsby-plugin-owa",
