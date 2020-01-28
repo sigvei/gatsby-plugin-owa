@@ -1,6 +1,6 @@
 import React from 'react'
 
-function trackingCode(options) {
+function trackingCode (options) {
   const {
     owaUrl,
     siteId
@@ -21,15 +21,15 @@ function trackingCode(options) {
       _owa_s.parentNode.insertBefore(_owa, _owa_s);
     }());
   `
-  
-  return(
+
+  return (
     <script
-      key={`gatsby-plugin-owa`}
+      key={'gatsby-plugin-owa'}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   )
-}   
+}
 
 exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
-  setPostBodyComponents([ trackingCode(pluginOptions) ])
+  setPostBodyComponents([trackingCode(pluginOptions)])
 }

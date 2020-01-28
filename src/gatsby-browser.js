@@ -3,16 +3,15 @@ exports.onRouteUpdate = ({ location, prevLocation }) => {
   // so this little hack is required
   const sendPageView = () => {
     const { title } = document
-    const tracker = window["OWATracker"]
-    const event = new window["OWA"].event
+    const tracker = window.OWATracker
+    const event = new window.OWA.event() // eslint-disable-line new-cap
     const url = location.href
     const prevUrl = prevLocation && prevLocation.href
-
 
     prevUrl && event.set('HTTP_REFERER', prevUrl)
     event.set('page_url', url)
     event.set('page_title', title)
-    event.setEventType("base.page_request")
+    event.setEventType('base.page_request')
 
     tracker.trackEvent(event)
   }
