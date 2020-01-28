@@ -4,7 +4,8 @@ function trackingCode (options) {
   const {
     owaUrl,
     siteId,
-    trackClicks
+    trackClicks,
+    trackDomStream
   } = options
 
   const cmds = [
@@ -14,6 +15,10 @@ function trackingCode (options) {
 
   if (trackClicks === true) {
     cmds.push(['trackClicks'])
+  }
+
+  if (trackDomStream === true) {
+    cmds.push(['trackDomStream'])
   }
 
   const cmdsHtml = cmds.map(cmd => (
