@@ -1,0 +1,11 @@
+{
+  "git": {
+    "tagname": "v${version}"
+  },
+  "github": {
+    "release": true
+  },
+  "npm": {
+    "release": true
+  }
+}
