@@ -23,6 +23,8 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
    ]
    ```
 
+   The `owaUrl` should be a full url to an owa installation, with an ending slash, like `https://my-owa-server.domain/owa/`.
+
 ## License
 
 The MIT License
