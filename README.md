@@ -7,7 +7,7 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
 1. Install the plugin
 
    ```bash
-   npm -i gatsby-plugin-owa
+   npm i gatsby-plugin-owa
    ```
 
 2. Load the plugin in `gatsby-config.js`, with options:
