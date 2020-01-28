@@ -17,7 +17,7 @@ Plugin to add the [Open Web Analytics](https://www.openwebanalytics.com) trackin
        resolve: `gatsby-plugin-owa`,
        options: {
        	  siteId: 'OWA_SITE_ID',
-	  owaUrl: 'OWA_URL'
+          owaUrl: 'OWA_URL'
        }
      }
    ]
